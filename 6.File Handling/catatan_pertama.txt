@@ -1,0 +1,6 @@
+Halo! Ini adalah file pertama saya.
+Teks ini ditulis oleh Python, bukan manusia.
+Hebat kan?. 
+Ini adalah pesan tambahan.
+Bagaimana pesan sebelumnya masih ada kan.
+Oke berhasil
