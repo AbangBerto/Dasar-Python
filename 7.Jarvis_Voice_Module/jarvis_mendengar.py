@@ -102,7 +102,7 @@ def wait_for_jarvis():
     while True:
         text = listen(timeout=4, phrase_limit=4)
         if "hai" in text:
-            jarvis_speak("Ya, Ada apa bos berto")
+            jarvis_speak("Ya, Ada apa bos ")
             return
 
 
