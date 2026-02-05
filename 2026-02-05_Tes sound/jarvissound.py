@@ -10,4 +10,4 @@ nama_file = "i33.mp3" # meyimpan suara dengan format mp3
 suara_goole.save(nama_file)
 
 print("putar lagu")
-playsound(nama_file) # memutar suara
+playsound(nama_file) # memutar suara 
