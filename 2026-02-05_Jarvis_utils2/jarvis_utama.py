@@ -2,7 +2,8 @@ import suara           # Mulut
 import jarvis_listen   # Telinga
 import kontrol_laptop  
 import operasi_hitung 
-import os              
+import os
+        
 
 def bersihkan():
     os.system('cls' if os.name == 'nt' else 'clear')

@@ -2,6 +2,7 @@ import os
 import webbrowser
 import datetime
 import wikipedia
+import pywhatkit 
 
 wikipedia.set_lang("Id")
 
@@ -25,8 +26,12 @@ def eksekusi_perintah(perintah):
     elif "buka google" in perintah:
         webbrowser.open("https://www.google.com")
         return "Membuka Google."
+    
+    elif "putar" in perintah or "mainkan" in perintah:
+        lagu = perintah.replace("putar", "").replace("mainkan", "")
+        pywhatkit.playonyt(lagu)
+        return f"Siap, memutar {lagu}."
 
- 
     elif "buka notepad" in perintah:
         os.system("notepad") 
         return "Notepad sudah dibuka."
