@@ -1,6 +1,9 @@
 import os
 import webbrowser
-import datetime 
+import datetime
+import wikipedia
+
+wikipedia.set_lang("Id")
 
 def eksekusi_perintah(perintah):
     perintah = perintah.lower()
@@ -31,7 +34,16 @@ def eksekusi_perintah(perintah):
     elif "buka kalkulator" in perintah:
         os.system("calc")
         return "Kalkulator sistem dibuka."
+    
+    elif "cari" in perintah or "siapa" in perintah or "apa itu" in perintah:
+        
+        topik = perintah.replace("cari", "").replace("siapa", "").replace("apa itu", "")
+        
+        try:
+            hasil = wikipedia.summary(topik, sentences=2)
+            return hasil
+        except:
+            return "Maaf bos, saya tidak menemukan informasi itu."
 
-  
     else:
-        return False 
+        return False
